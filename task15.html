@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+</head>
+<body>
+    <script>
+        document.body.style.backgroundColor="pink";
+    </script>
+    <h1 id="heading">To Do List</h1>
+    <div id="words">What are your PLANS?</div>
+    <script>
+        let heading=document.getElementById('heading');
+        let words=document.getElementById('words');
+
+        heading.style.textAlign='center';
+        words.style.textAlign='center';
+    </script>
+        <input type="text" id="taskInput">
+        <button onclick="addtask()">Add Task</button>
+    <div id="container" style="text-align: center;">
+    <h2>Pending Tasks</h2>
+    <ul id="pendingTasks"></ul>
+    <h2>Completed Tasks</h2>
+    <ul id="completedTasks"></ul>
+</div>
+    <script>
+        addtask.style.top='20px';
+        addtask.style.top.left='50px';
+        pendingTaskslist.style.top='100px';
+        pendingTaskslist.style.left='50px';
+        completedTaskslist.style.top='200px';
+        completedTaskslist.style.left='50px';
+    </script>
+</body>
+<script src="script.js"></script>
+</html>
+
+
